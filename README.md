@@ -1,4 +1,4 @@
-# Nodecommerce
+![alt tag](https://github.com/ttaub/nodecommerce/blob/master/nodecommerce.png?raw=true)
 
  Nodecommerce is an express based ecommerce API which already includes:
 * includes database migrations using the knex ORM
