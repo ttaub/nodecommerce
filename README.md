@@ -47,31 +47,6 @@ Migrations must return a promise. If you don't, the migration will be "run", whi
 
 The "down" section should be in reverse order from the "up" section
 
-#Code Style
-
-1. Don't use more that one newline to separate blocks. It starts to look like crap after a while
-2. Install jscs using npm: `(sudo) npm install -g jscs`, and use the `JSCS-Formatter` plugin for Sublime Text, or whatever the equivalent is for your editor of choice. More info on jscs can be found [here](https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8)
-3. The .jscsrc file is included with this repo. It is based on the wordpress styleguide, but is slightly modified
-4. The jscs plugin may not always know best. For single line else statements, it'll always try to keep one single space, but aligning them may be desired. First format it and then align them
-5. Always have newlines at the end of files. This is a *very* common style, and is also reccommended by git
-6. Align code whenever possible. This can be done easily with the `Alignment` package for Sublime Text. Sublime Text's multiple cursor support (along with the `ctrl+d` shortcut to add the next instance of the highlighted word to the selection) also makes this easy
-7. Single quotes, not double quotes. This should be enforced by jscs
-8. Semicolons: Use them. Note when returning objects to have the bracket on the same line as the return keyword. JS's auto semicolon insertion will add the semicolon after the return, causing it to return null
-9. Controls statement braces: Use them. The only exception should be when the only line inside the statement is on the same line
-10. `else` should go on the same line as the closing brace of the previous `if`
-11. Comments: Should be used when the code isn't obvious. They should also be as snarky as possible. Multi line comments should be created through repeated single line comments. They should have a newline between them and the previous line
-12. Chained methods: the first one goes on the same line as the object. The rest on new lines. They should all be at the same indentation level as the object, not one above. For example:  
-```
-// CORRECT
-object.method1()
-.method2()
-.method3();
-
-//INCORRECT
-object.method1()
-    .method2()
-    .method3();
-```
 
 
 
