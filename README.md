@@ -3,7 +3,7 @@
  Nodecommerce is an express based ecommerce API which already includes:
 * includes database migrations using the knex ORM
 * integrated with the stripe payments API
-* mocha and chai unit tests along with codecoverage with istanbul
+* mocha and chai unit tests along with istanbul code coverage
 * production grade logging with buynan
 * secure user authentication system using json web tokens
 
